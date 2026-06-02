@@ -1,0 +1,30 @@
+{
+  "nominal": {
+    "sensor_termico": {"min": 22.0, "max": 28.0},
+    "sensor_optico": ["RGB+NIR Nominal — Céu Limpo", "RGB+NIR Nominal — Cobertura de Nuvens < 10%"],
+    "buffer_imagens": {"min": 2.0, "max": 12.0},
+    "precisao_geolocalizacao": {"min": 4.0, "max": 8.0},
+    "energia_disponivel": {"min": 90.0, "max": 100.0}
+  },
+  "incendio": {
+    "sensor_termico": {"min": 320.0, "max": 550.0},
+    "sensor_optico": ["Anomalia Óptica — Pluma de Fumo Detetada & Baixa Reflectância NIR"],
+    "buffer_imagens": {"min": 2.0, "max": 12.0},
+    "precisao_geolocalizacao": {"min": 4.0, "max": 8.0},
+    "energia_disponivel": {"min": 80.0, "max": 95.0}
+  },
+  "falha_transmissao": {
+    "sensor_termico": {"min": 22.0, "max": 28.0},
+    "sensor_optico": ["RGB+NIR Nominal — Céu Limpo"],
+    "buffer_imagens": {"min": 85.0, "max": 98.0},
+    "precisao_geolocalizacao": {"min": 4.0, "max": 8.0},
+    "energia_disponivel": {"min": 85.0, "max": 95.0}
+  },
+  "crise_energia": {
+    "sensor_termico": {"min": 20.0, "max": 26.0},
+    "sensor_optico": ["Sensor Óptico em Modo de Economia de Energia (Subamostragem)"],
+    "buffer_imagens": {"min": 5.0, "max": 15.0},
+    "precisao_geolocalizacao": {"min": 110.0, "max": 190.0},
+    "energia_disponivel": {"min": 20.0, "max": 35.0}
+  }
+}
