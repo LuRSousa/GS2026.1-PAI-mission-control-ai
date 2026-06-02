@@ -50,7 +50,12 @@ git clone https://github.com/LuRSousa/GS2026.1-PAI-mission-control-ai
 ### 2. Crie o ambiente virtual:
 Com o repositório aberto, novamente no terminal, cole o comando abaixo:
 ```bash
-python -m venv .venv & source .venv/bin/activate
+# Linux/Mac
+python -m venv .venv && source .venv/bin/activate
+
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
 ### 3. Instale dependências:
@@ -86,6 +91,10 @@ python main.py
 ### Cenário Incêndio — Laudo da IA
 ![Cenário Incêndio — Laudo da IA](assets/teste-cenario_incendio_ia.png)
 
+### Vídeo Demonstrativo
+[Assistir demonstração no YouTube](https://www.youtube.com/watch?v=8cUP15DHfN8)
+> Configurado como "Não listado" no YouTube.
+
 ---
 
 ## System Prompt
@@ -113,11 +122,6 @@ Como este ecossistema foi desenvolvido como um protótipo focado na validação 
 - **Janela de Contexto Volátil (Stateless CLI):** A CLI opera no formato de requisição e resposta sem persistência de memória histórica longa entre comandos consecutivos. O modelo analisa o "snapshot" daquele instante enviado pelo Python Core, o que impede análises preditivas profundas baseadas em séries temporais complexas ou histórico de órbitas passadas diretamente no prompt.
 
 - **Precisão Métrica Simulada:** Os alertas de geolocalização e as amarrações jurídicas de compliance são inferências lógicas baseadas nas strings do contexto. O sistema não processa arquivos georreferenciados reais (como Shapefiles, GeoJSON ou imagens de satélite raster TIFF) nem possui integração com Sistemas de Informação Geográfica (SIG).
-
----
-
-## Vídeo de Demonstração
-[Assistir no YouTube](https://www.youtube.com/watch?v=8cUP15DHfN8)
 
 ---
 
