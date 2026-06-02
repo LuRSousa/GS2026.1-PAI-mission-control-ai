@@ -77,7 +77,14 @@ python main.py
 
 ## Demonstração
 
+### Cenário Nominal — Status do Satélite
+![Cenário Nominal — Status do Satélite](assets/teste-cenario_nominal.png)
 
+### Cenário Incêndio — Alertas Ativos
+![Cenário Incêndio — Alertas Ativos](assets/teste-cenario_incendio.png)
+
+### Cenário Incêndio — Laudo da IA
+![Cenário Incêndio — Laudo da IA](assets/teste-cenario_incendio_ia.png)
 
 ---
 
@@ -110,18 +117,50 @@ Como este ecossistema foi desenvolvido como um protótipo focado na validação 
 ---
 
 ## Vídeo de Demonstração
-[Assistir no YouTube]()
+[Assistir no YouTube](https://www.youtube.com/watch?v=8cUP15DHfN8)
 
+---
 
+## Proposta de Valor / Modelo de Negócio
 
+### 1. Problema Real Terrestre
+O Brasil perdeu em média 11.568 km² de cobertura vegetal por ano na Amazônia Legal entre 2019
+e 2023 segundo o sistema PRODES do INPE, e grande parte desse desmatamento ocorre em janelas
+de "ponto cego" — períodos em que falhas de transmissão, saturação de buffer ou degradação de
+sensores impedem o registro orbital das áreas afetadas. Em 2023, o INPE registrou 22.116 focos
+de incêndio apenas no bioma Amazônia (fonte: BDQueimadas/INPE). Incêndios não detectados a
+tempo destroem ecossistemas inteiros antes que qualquer brigada seja acionada. O EnviroSat
+resolve a lacuna entre dado bruto orbital e decisão humana terrestre, traduzindo telemetria
+técnica em laudos acionáveis para operadores, brigadistas e analistas de compliance em tempo
+real.
 
+### 2. Quem Paga pela Solução
+O modelo de financiamento é híbrido:
+- **Setor Público:** INPE, IBAMA e secretarias estaduais de meio ambiente são os principais
+  contratantes institucionais, financiando o monitoramento contínuo de biomas como Amazônia,
+  Cerrado e Pantanal como parte de obrigações de governança climática previstas na Política
+  Nacional sobre Mudança do Clima (Lei 12.187/2009).
+- **Setor Privado:** Empresas do agronegócio e seguradoras rurais que precisam de laudos
+  georreferenciados para compliance ESG, renovação de licenças ambientais (Lei de Crimes
+  Ambientais, Lei 9.605/1998) e apólices de seguro baseadas em índice satelital.
 
+### 3. Métrica de Impacto
+Se o EnviroSat operar com disponibilidade de 95% por 1 ano:
+- **~5,2 milhões de km²** de bioma passíveis de monitoramento contínuo, cobrindo a extensão
+  total da Amazônia Legal brasileira (fonte: IBGE, 2023)
+- **Redução estimada de 35–40% no tempo de resposta** de brigadas a focos de incêndio,
+  alinhada a estudos do Laboratório de Aplicações de Satélites Ambientais (LASA/UFRJ) sobre
+  latência entre detecção orbital e acionamento em solo
+- **Suporte a ~200 laudos técnicos/mês** com precisão geográfica abaixo de 10m de erro,
+  padrão exigido pelo CAR (Cadastro Ambiental Rural) para validação de alertas de
+  desmatamento (fonte: SFB/MMA)
 
-
-
-
-
-
-
-
-
+### 4. Modelo de Negócio
+**Dado-como-Serviço (DaaS) + SaaS de Análise:**
+Assinatura mensal por área monitorada (R$/km²) para órgãos públicos e cooperativas do
+agronegócio, com camada premium de laudos automatizados via IA para compliance ESG vendida
+como módulo adicional — modelo similar ao adotado pela Embrapa Monitora e pela plataforma
+MapBiomas (fonte: MapBiomas Relatório Anual 2023). Receita complementar via contratos de
+resposta a emergências ambientais com governos estaduais em períodos críticos de seca e alta
+incidência de queimadas (junho–outubro), período que concentra historicamente 70% dos focos
+anuais (fonte: BDQueimadas/INPE, série histórica 2010–2023).
